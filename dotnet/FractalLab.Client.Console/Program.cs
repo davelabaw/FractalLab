@@ -5,6 +5,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        Console.ResetColor();
+        Console.Clear();
+
         Console.Write("Welcome to the fun world of fractals! Maximize your browsers and maybe zoom out your console window's text. Press Enter to start!");
         Console.ReadLine(); //Keep console open
 
@@ -28,7 +31,6 @@ internal class Program
             //Start at top of the console
             Console.SetCursorPosition(0, 0);
             
-
             Console.WriteLine($"{x} of {loops}");
 
             if (x > 0)
@@ -38,7 +40,7 @@ internal class Program
                 if (x == 1)
                 {
                     // Initial zoom center 
-                    var newCoordinates = MandelbrotSet.Zoom(0.275005, 0.00615007, 1.75, xMin, xMax, yMin, yMax);
+                    var newCoordinates = MandelbrotSet.Zoom(0.27500402040511, 0.0061520017195, 1.75, xMin, xMax, yMin, yMax);
                     xMin = newCoordinates.xMin;
                     xMax = newCoordinates.xMax;
                     yMin = newCoordinates.yMin;
