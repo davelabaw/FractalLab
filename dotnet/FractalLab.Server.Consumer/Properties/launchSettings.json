@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FractalLab.Server.Consumer": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

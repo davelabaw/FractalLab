@@ -1,0 +1,11 @@
+@FractalLab.Server.MainWebApp_HostAddress = http://localhost:5165
+
+GET {{FractalLab.Server.MainWebApp_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{FractalLab.Server.MainWebApp_HostAddress}}/todos/1
+Accept: application/json
+
+###
