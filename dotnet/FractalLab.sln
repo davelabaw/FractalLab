@@ -3,11 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36401.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractalLab.Server.MainWebApp", "FractalLab.Server.MainWebApp\FractalLab.Server.MainWebApp.csproj", "{D3FE5B2B-C82B-4665-9372-87C82A05A1D7}"
-	ProjectSection(ProjectDependencies) = postProject
-		{794AE4AB-F546-4F20-8FA1-08E25FA6F972} = {794AE4AB-F546-4F20-8FA1-08E25FA6F972}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractalLab.Server.MinWebAPI", "FractalLab.Server.MinWebAPI\FractalLab.Server.MinWebAPI.csproj", "{A9BE39AE-C2C3-4A62-8F5C-7966803E59DE}"
 	ProjectSection(ProjectDependencies) = postProject
 		{794AE4AB-F546-4F20-8FA1-08E25FA6F972} = {794AE4AB-F546-4F20-8FA1-08E25FA6F972}
@@ -26,16 +21,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractalLab.Common.Tests", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractalLab.Common.Imaging", "FractalLab.Common.Imaging\FractalLab.Common.Imaging.csproj", "{F78A6EEE-A8CE-406B-A64E-7340F52AE511}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractalLab.AppGateway", "FractalLab.AppGateway\FractalLab.AppGateway.csproj", "{8A54FD3F-7F3B-46B0-BB16-C5F819225592}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D3FE5B2B-C82B-4665-9372-87C82A05A1D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3FE5B2B-C82B-4665-9372-87C82A05A1D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3FE5B2B-C82B-4665-9372-87C82A05A1D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3FE5B2B-C82B-4665-9372-87C82A05A1D7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A9BE39AE-C2C3-4A62-8F5C-7966803E59DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A9BE39AE-C2C3-4A62-8F5C-7966803E59DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9BE39AE-C2C3-4A62-8F5C-7966803E59DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -60,6 +53,10 @@ Global
 		{F78A6EEE-A8CE-406B-A64E-7340F52AE511}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F78A6EEE-A8CE-406B-A64E-7340F52AE511}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F78A6EEE-A8CE-406B-A64E-7340F52AE511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A54FD3F-7F3B-46B0-BB16-C5F819225592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A54FD3F-7F3B-46B0-BB16-C5F819225592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A54FD3F-7F3B-46B0-BB16-C5F819225592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A54FD3F-7F3B-46B0-BB16-C5F819225592}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

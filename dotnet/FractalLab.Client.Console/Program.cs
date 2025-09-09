@@ -31,6 +31,7 @@ internal class Program
             //Start at top of the console
             Console.SetCursorPosition(0, 0);
             
+
             Console.WriteLine($"{x} of {loops}");
 
             if (x > 0)
@@ -55,8 +56,13 @@ internal class Program
                     yMax = newCoordinates.yMax;
                 }
             }
+
+            MandelbrotSetRequest request = new MandelbrotSetRequest(xMin, xMax, yMin, yMax, width, height, iteration);
+
             int[,] result = MandelbrotSet.CalculateParallel(xMin, xMax, yMin, yMax, width, height, iteration);
-            
+
+
+            PrintMetadata(request);
             //PrintResultText(result);
             PrintColor(result);
             //DownloadImage(result);
@@ -66,6 +72,14 @@ internal class Program
         
         Console.WriteLine("Rendering complete! Press Enter to exit.");
         Console.ReadLine(); //Keep console open
+    }
+
+    private static void PrintMetadata(MandelbrotSetRequest request)
+    {
+        Console.WriteLine(
+                            $"{request.Width}x{request.Height} | X: {request.XMin} to {request.XMax} | Y: {request.YMin} to {request.YMax} | Max Iterations: {request.MaxIterations} " +
+                            $" ({request.XMin}, {request.XMax}, {request.YMin}, {request.YMax}, {request.Width}, {request.Height}, {request.MaxIterations})"
+                        );
     }
 
     private static void PrintResultText(int[,] result)
